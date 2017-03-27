@@ -7,7 +7,7 @@
    maxstatements:12, maxcomplexity:4 */
 
 /* eslint strict: 1, max-lines: 1, symbol-description: 1, max-nested-callbacks: 1,
-   max-statements: 1 */
+   max-statements: 1, id-length: 1 */
 
 /* global JSON:true, expect, module, require, describe, xit, it, returnExports */
 
