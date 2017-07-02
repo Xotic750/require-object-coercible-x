@@ -31,43 +31,37 @@
  *
  * @see {@link http://www.ecma-international.org/ecma-262/6.0/#sec-requireobjectcoercible|7.2.1 RequireObjectCoercible ( argument )}
  *
- * @version 1.2.0
+ * @version 1.3.0
  * @author Xotic750 <Xotic750@gmail.com>
  * @copyright  Xotic750
  * @license {@link <https://opensource.org/licenses/MIT> MIT}
  * @module require-object-coercible-x
  */
 
-/* eslint strict: 1, id-length: 1 */
+'use strict';
 
-/* global module */
+var isNil = require('is-nil-x');
 
-;(function () { // eslint-disable-line no-extra-semi
+/**
+ * The abstract operation RequireObjectCoercible throws an error if argument
+ * is a value that cannot be converted to an Object using ToObject.
+ *
+ * @param {*} value - The `value` to check.
+ * @throws {TypeError} If `value` is a `null` or `undefined`.
+ * @returns {string} The `value`.
+ * @example
+ * var RequireObjectCoercible = require('require-object-coercible-x');
+ *
+ * RequireObjectCoercible(); // TypeError
+ * RequireObjectCoercible(null); // TypeError
+ * RequireObjectCoercible('abc'); // 'abc'
+ * RequireObjectCoercible(true); // true
+ * RequireObjectCoercible(Symbol('foo')); // Symbol('foo')
+ */
+module.exports = function RequireObjectCoercible(value) {
+  if (isNil(value)) {
+    throw new TypeError('Cannot call method on ' + value);
+  }
 
-  'use strict';
-
-  var isNil = require('is-nil-x');
-
-  /**
-   * The abstract operation RequireObjectCoercible throws an error if argument
-   * is a value that cannot be converted to an Object using ToObject.
-   *
-   * @param {*} value The `value` to check.
-   * @throws {TypeError} If `value` is a `null` or `undefined`.
-   * @return {string} The `value`.
-   * @example
-   * var RequireObjectCoercible = require('require-object-coercible-x');
-   *
-   * RequireObjectCoercible(); // TypeError
-   * RequireObjectCoercible(null); // TypeError
-   * RequireObjectCoercible('abc'); // 'abc'
-   * RequireObjectCoercible(true); // true
-   * RequireObjectCoercible(Symbol('foo')); // Symbol('foo')
-   */
-  module.exports = function RequireObjectCoercible(value) {
-    if (isNil(value)) {
-      throw new TypeError('Cannot call method on ' + value);
-    }
-    return value;
-  };
-}());
+  return value;
+};
