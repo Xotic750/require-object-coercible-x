@@ -24,7 +24,7 @@
 ES6-compliant shim for RequireObjectCoercible.
 
 **See**: [7.2.1 RequireObjectCoercible ( argument )](http://www.ecma-international.org/ecma-262/6.0/#sec-requireobjectcoercible)  
-**Version**: 1.4.1  
+**Version**: 1.4.2  
 **Author**: Xotic750 <Xotic750@gmail.com>  
 **License**: [MIT](&lt;https://opensource.org/licenses/MIT&gt;)  
 **Copyright**: Xotic750  

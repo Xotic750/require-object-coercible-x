@@ -1,7 +1,7 @@
 /**
  * @file ES6-compliant shim for RequireObjectCoercible.
  * @see {@link http://www.ecma-international.org/ecma-262/6.0/#sec-requireobjectcoercible|7.2.1 RequireObjectCoercible ( argument )}
- * @version 1.4.1
+ * @version 1.4.2
  * @author Xotic750 <Xotic750@gmail.com>
  * @copyright  Xotic750
  * @license {@link <https://opensource.org/licenses/MIT> MIT}
