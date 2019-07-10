@@ -21,16 +21,15 @@
 <a name="module_require-object-coercible-x"></a>
 
 ## require-object-coercible-x
+
 ES6-compliant shim for RequireObjectCoercible.
 
-**See**: [7.2.1 RequireObjectCoercible ( argument )](http://www.ecma-international.org/ecma-262/6.0/#sec-requireobjectcoercible)  
-**Version**: 1.4.3  
-**Author**: Xotic750 <Xotic750@gmail.com>  
-**License**: [MIT](&lt;https://opensource.org/licenses/MIT&gt;)  
-**Copyright**: Xotic750  
+**See**: [7.2.1 RequireObjectCoercible ( argument )](http://www.ecma-international.org/ecma-262/6.0/#sec-requireobjectcoercible)
+
 <a name="exp_module_require-object-coercible-x--module.exports"></a>
 
 ### `module.exports(value)` ⇒ <code>string</code> ⏏
+
 The abstract operation RequireObjectCoercible throws an error if argument
 is a value that cannot be converted to an Object using ToObject.
 
@@ -40,18 +39,18 @@ is a value that cannot be converted to an Object using ToObject.
 
 - <code>TypeError</code> If `value` is a `null` or `undefined`.
 
-
-| Param | Type | Description |
-| --- | --- | --- |
+| Param | Type            | Description           |
+| ----- | --------------- | --------------------- |
 | value | <code>\*</code> | The `value` to check. |
 
-**Example**  
+**Example**
+
 ```js
-var RequireObjectCoercible = require('require-object-coercible-x');
+import RequireObjectCoercible from 'require-object-coercible-x';
 
 RequireObjectCoercible(); // TypeError
 RequireObjectCoercible(null); // TypeError
-RequireObjectCoercible('abc'); // 'abc'
-RequireObjectCoercible(true); // true
-RequireObjectCoercible(Symbol('foo')); // Symbol('foo')
+console.log(RequireObjectCoercible('abc')); // 'abc'
+console.log(RequireObjectCoercible(true)); // true
+console.log(RequireObjectCoercible(Symbol('foo'))); // Symbol('foo')
 ```
