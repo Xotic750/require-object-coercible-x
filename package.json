@@ -1,6 +1,6 @@
 {
   "name": "require-object-coercible-x",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "ES6-compliant shim for RequireObjectCoercible.",
   "homepage": "https://github.com/Xotic750/require-object-coercible-x",
   "author": {

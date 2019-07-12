@@ -2,13 +2,13 @@
 {
   "author": "Graham Fairweather",
   "copywrite": "Copyright (c) 2015-present",
-  "date": "2019-07-12T14:08:24.211Z",
+  "date": "2019-07-12T14:10:00.212Z",
   "describe": "",
   "description": "ES6-compliant shim for RequireObjectCoercible.",
   "file": "require-object-coercible-x.js",
-  "hash": "4c6196c12fb6805401e1",
+  "hash": "544481937d499693db91",
   "license": "MIT",
-  "version": "2.0.1"
+  "version": "2.0.2"
 }
 */
 (function webpackUniversalModuleDefinition(root, factory) {
@@ -144,7 +144,7 @@ function isNil(value) {
 
 
 // CONCATENATED MODULE: ./dist/require-object-coercible-x.esm.js
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return RequireObjectCoercible; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return requireObjectCoercible; });
 
 /**
  * The abstract operation RequireObjectCoercible throws an error if argument
@@ -155,7 +155,7 @@ function isNil(value) {
  * @returns {string} The `value`.
  */
 
-function RequireObjectCoercible(value) {
+function requireObjectCoercible(value) {
   if (isNil(value)) {
     throw new TypeError("Cannot call method on ".concat(value));
   }
