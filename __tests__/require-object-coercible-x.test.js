@@ -1,7 +1,6 @@
 import noop from 'lodash/noop';
 import requireObjectCoercible from 'src/require-object-coercible-x';
 
-/* eslint-disable-next-line compat/compat */
 const hasSymbol = typeof Symbol === 'function' && typeof Symbol('') === 'symbol';
 const ifSymbolIt = hasSymbol ? it : xit;
 
@@ -28,7 +27,7 @@ describe('basic tests', function() {
 
   ifSymbolIt('should return Symbol', function() {
     expect.assertions(1);
-    /* eslint-disable-next-line compat/compat */
+
     const sym = Symbol('foo');
     expect(requireObjectCoercible(sym)).toBe(sym);
   });
