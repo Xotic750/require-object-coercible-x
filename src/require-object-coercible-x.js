@@ -8,10 +8,12 @@ import isNil from 'is-nil-x';
  * @throws {TypeError} If `value` is a `null` or `undefined`.
  * @returns {string} The `value`.
  */
-export default function requireObjectCoercible(value) {
+const requireObjectCoercible = function requireObjectCoercible(value) {
   if (isNil(value)) {
     throw new TypeError(`Cannot call method on ${value}`);
   }
 
   return value;
-}
+};
+
+export default requireObjectCoercible;

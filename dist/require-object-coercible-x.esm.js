@@ -8,12 +8,14 @@ import isNil from 'is-nil-x';
  * @returns {string} The `value`.
  */
 
-export default function requireObjectCoercible(value) {
+var requireObjectCoercible = function requireObjectCoercible(value) {
   if (isNil(value)) {
     throw new TypeError("Cannot call method on ".concat(value));
   }
 
   return value;
-}
+};
+
+export default requireObjectCoercible;
 
 //# sourceMappingURL=require-object-coercible-x.esm.js.map
