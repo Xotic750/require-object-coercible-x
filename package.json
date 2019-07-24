@@ -1,6 +1,6 @@
 {
   "name": "require-object-coercible-x",
-  "version": "2.0.20",
+  "version": "2.0.21",
   "description": "ES6-compliant shim for RequireObjectCoercible.",
   "homepage": "https://github.com/Xotic750/require-object-coercible-x",
   "author": {
@@ -22,6 +22,7 @@
   ],
   "module": "dist/require-object-coercible-x.esm.js",
   "main": "dist/require-object-coercible-x.js",
+  "jsdelivr": "dist/require-object-coercible-x.min.js",
   "scripts": {
     "build:esm": "mkdirp dist && babel -s true --env-name esm src/require-object-coercible-x.js -o dist/require-object-coercible-x.esm.js",
     "build:base": "webpack --bail --progress --profile --colors",
@@ -49,7 +50,7 @@
     "url": "https://github.com/Xotic750/require-object-coercible-x/issues"
   },
   "dependencies": {
-    "is-nil-x": "^2.0.19"
+    "is-nil-x": "^2.0.20"
   },
   "devDependencies": {
     "@babel/cli": "^7.5.5",
