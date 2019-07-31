@@ -2,13 +2,13 @@
 {
   "author": "Graham Fairweather",
   "copywrite": "Copyright (c) 2015-present",
-  "date": "2019-07-31T19:20:24.406Z",
+  "date": "2019-07-31T21:49:32.939Z",
   "describe": "",
   "description": "ES6-compliant shim for RequireObjectCoercible.",
   "file": "require-object-coercible-x.js",
   "hash": "ef041bfa781b040eeaad",
   "license": "MIT",
-  "version": "2.0.26"
+  "version": "2.0.27"
 }
 */
 (function webpackUniversalModuleDefinition(root, factory) {
