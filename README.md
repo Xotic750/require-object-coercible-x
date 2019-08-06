@@ -35,6 +35,12 @@
 <img src="https://bettercodehub.com/edge/badge/Xotic750/require-object-coercible-x?branch=master"
   alt="bettercodehub score" height="18">
 </a>
+<a
+  href="https://coveralls.io/github/Xotic750/require-object-coercible-x?branch=master"
+  title="Coverage Status">
+<img src="https://coveralls.io/repos/github/Xotic750/require-object-coercible-x/badge.svg?branch=master"
+  alt="Coverage Status" height="18">
+</a>
 
 <a name="module_require-object-coercible-x"></a>
 
