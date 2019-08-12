@@ -2,7 +2,7 @@
 {
   "author": "Graham Fairweather",
   "copywrite": "Copyright (c) 2015-present",
-  "date": "2019-08-07T21:43:14.909Z",
+  "date": "2019-08-12T21:42:17.186Z",
   "describe": "",
   "description": "ES6-compliant shim for RequireObjectCoercible.",
   "file": "require-object-coercible-x.js",
